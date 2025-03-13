@@ -45,11 +45,7 @@ ul > li > a{
     line-height: normal;
 }
 
-.container .tabar .link >img{
-    width: 51.5px;
-    stroke: #1F1D2A;
-    padding-bottom: 20px;
-}
+
 .container .tabar .login >button{
     width: 109px;
     color: #1F1D2A;
@@ -60,10 +56,25 @@ ul > li > a{
 .baner{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;   
 }
 
+a::after{
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 4px;
+    background-color: green;
+    border-radius: 99px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width ease-in-out 0.5s;
+}
+
+.tabar .link >ul >li >a:hover::after{
+    width: 100%;
+}
 .baner .content{
     max-width: 579px;
 }
@@ -166,6 +177,8 @@ ul > li > a{
 
 }
 
+
+
 .cardd{
     display: flex;
     width: 200px;
@@ -205,10 +218,10 @@ ul > li > a{
 }
 
 .card .content-card > h3{
-color: var(--black, #1F1D2A);
-font-family: Poppins;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    color: var(--black, #1F1D2A);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
