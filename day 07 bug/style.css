@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+body{
+    background: linear-gradient(293deg, #E6E6E4 7.23%, #F0E8E2 97.74%);
+}
+
+.container{
+    max-width: 1272px;
+    margin: 0 auto;
+}
+
+.tabar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo > h1{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+ul{
+    display: flex;
+    gap: 20px;
+}
+ul > li{
+    list-style-type: none;
+
+}
+ul > li > a{
+    text-decoration: none;
+    color: var(--black, #1F1D2A);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container .tabar .link >img{
+    width: 51.5px;
+    stroke: #1F1D2A;
+    padding-bottom: 20px;
+}
+.container .tabar .login >button{
+    width: 109px;
+    color: #1F1D2A;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.baner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.baner .content{
+    max-width: 579px;
+}
+
+.baner .content > h1{
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.baner .img{
+    position: relative;
+}
+
+.baner .img > img{
+    border-radius: 50%;
+}
+
+.baner .img .img-2{
+    position:absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.baner .img .danh-gia{
+    position: absolute;
+    bottom: 0;
+    top: 401px;
+    width: 180px;
+    height: 130px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    text-align: left;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.baner .img .danh-gia .chunho{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color:  #9B948E;
+    padding-bottom: 15px;
+}
+
+.baner .content >button{
+    width: 170px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: var(--green, #96C67F);
+    margin-top: 50px;
+}
+
+.baner .content >p{
+    color: var(--cream, #9B948E);
+    margin-top: 30px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+}
+
+.opstion{
+    max-width: 764px;
+    height: 84px;
+    margin-top: 100px;
+    text-align: center;
+    margin-left: 270px;
+}
+
+.opstion .icon{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.mini-content{ 
+    margin-top: 100px;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+}
+
+.mini-content .one{
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+
+.mini-content .tow{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 100px;
+
+}
+
+.cardd{
+    display: flex;
+    width: 200px;
+    height: 380px;
+    text-align: center;
+    justify-content: space-between; 
+    padding-bottom: 20px;
+    margin-left: 50px;
+}
+
+.card{
+    background-color: #f1effaea;
+    border-radius: 10px;
+    margin-left: 38px;
+}
+
+.card > img{
+    width: 250px;
+    border-radius: 10px;
+    height: 280px;
+    margin-bottom: 5px;
+}
+
+.card .content-card{
+    text-align: left;
+    padding-left: 10px;
+
+}
+
+.card .content-card >p{
+    color: var(--cream, #9B948E);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card .content-card > h3{
+color: var(--black, #1F1D2A);
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
