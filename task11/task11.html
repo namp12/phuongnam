@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tamgiac(a, b, c) {
+            if((a + b > c) && (a + c > b) && (b + c > a)){
+                return true;
+            }
+            return false;
+        }
+
+        let a = parseInt(prompt("nhập a: "));
+        let b = parseInt(prompt("nhập b: "));
+        let c = parseInt(prompt("nhập c: "));
+
+        console.log(tamgiac(a, b, c));
+    </script>
+</body>
+</html>

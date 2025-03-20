@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let nang = parseFloat(prompt("nhập cân nặng: "));
+      let cao = parseFloat(prompt("nhập chiều cao: "));
+
+      function calcBMI(weight, height) {
+        let bmi = weight / height ** 2;
+        let category;
+
+        if (bmi < 18.5) {
+          category = "Thiếu cân";
+        } else if (18.5 <= bmi && bmi < 23) {
+          category = "Bình thường";
+        } else if (23 <= bmi && bmi < 25) {
+          category = "Thừa cân";
+        } else {
+          category = "Béo phì";
+        }
+
+        return `BMI : ${bmi.toFixed(2)}, Tình Trạng : ${category}`;
+      }
+
+      console.log(calcBMI(nang, cao));
+    </script>
+  </body>
+</html>
