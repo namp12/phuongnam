@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery {
+  display: flex;
+  gap: 10px;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.thumbnails img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+.thumbnails img:hover {
+  border: 2px solid #ff6f61;
+}
+
+.main-image img {
+  width: 300px;
+  height: auto;
+}
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="thumbnails">
+          <img src="./img/Asgaard sofa 3.png" onclick="changeImage('./img/Asgaard sofa 3.png')" />
+          <img src="./img/Maya sofa three seater (1) 1.png" onclick="changeImage('./img/Maya sofa three seater (1) 1.png')" />
+          <img src="./img/Outdoor sofa set 2.png" onclick="changeImage('./img/Outdoor sofa set 2.png')" />
+          <img src="./img/Outdoor sofa set_2 1.png" onclick="changeImage('./img/Outdoor sofa set_2 1.png')" />
+        </div>
+        <div class="main-image">
+          <img id="displayedImage" src="./img/Stuart sofa 1.png" />
+        </div>
+      </div>
+      
+      <script>
+        function changeImage(imageSrc) {
+  document.getElementById("displayedImage").src = imageSrc;
+}
+
+      </script>
+</body>
+</html>

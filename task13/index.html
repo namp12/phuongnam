@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function printPrimeNumber(n) {
+    if (n < 2) {
+        return false;
+    }
+
+    let output = ""; 
+
+    for (let num = 2; num <= n; num++) {
+        let isPrime = true;
+
+        for (let i = 2; i * i <= num; i++) {
+            if (num % i === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime) {
+            if (output !== "") 
+                output += ", "; 
+                output += num;
+        }
+    }
+    document.write("Các số nguyên tố từ 2 đến " + n + " là: " + output);
+}
+
+let a = parseInt(prompt("nhap a :"));
+printPrimeNumber(a);
+
+    </script>
+</body>
+</html>
